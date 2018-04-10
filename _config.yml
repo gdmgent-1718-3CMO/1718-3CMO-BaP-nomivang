@@ -4,22 +4,30 @@
 
 # Site settings
 # ─────────────
-baseurl: /1718-BaP # the subpath of your site, e.g. /blog
+baseurl: /1718-3CMO-BaP-nomivang
+url: ""
 # host   : 127.0.0.1
 # port   : 4000
 
 # Custom Site variables
 # ─────────────────────
-title: 1718 BaP CMO
+title: Huisstijlgids VVW
+description: "Online huisstijlgids van de Vlaamse Vereniging voor Weerkunde. Deze gids dient als leidraad voor alle visuele communicatie van de VVW zodat deze een herkenbare visuele samenhang vertoont."
+tagline: "VVW | Huisstijlgids"
 
 # Build settings
 # ──────────────
 defaults:
   -
-#    scope:
-#      path: "style-guide"
+    scope:
+      path: ""
     values:
       layout: vertical
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
 
 exclude:
   - Gemfile
