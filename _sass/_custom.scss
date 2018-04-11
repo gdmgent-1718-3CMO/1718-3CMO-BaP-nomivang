@@ -1,14 +1,69 @@
-/* Navigation
----------------------------------------------
-*/
-.navbar a {
-    border: none;
+/* ------------ GLOBAL ------------ */
+@font-face {
+  font-family: Muli;
+  src: url('/assets/fonts/Muli-regular.ttf');
 }
 
-/* FOOTER
-----------------------------------------------
-sticked to the bottom with small content pages
-*/
+@font-face {
+  font-family: Muli-Extrabold;
+  src: url('/assets/fonts/Muli-Extrabold.ttf');
+}
+
+@font-face {
+  font-family: Muli-Italic;
+  src: url('/assets/fonts/Muli-Italic.ttf');
+}
+
+body {
+  font-family: 'Muli', 'Trebuchet MS', sans-serif;
+  color: #3C3C3B;
+}
+
+h1, h2 {
+  font-family: 'Muli', 'Trebuchet MS', sans-serif;
+  color: #3C3C3B;
+}
+
+a {
+  color:#66C1BF;
+  border-bottom:1px solid #66C1BF;
+  padding-bottom:2px;
+}
+
+a:hover {
+  color: #498B89;
+  border-bottom: 1px solid #498B89;
+}
+
+blockquote {
+  padding-left: 24px;
+  border-left: 2px solid #E73458;
+}
+
+/* ------------ NAVBAR ------------ */
+.navbar a {
+    border: none;
+    padding:17px;
+}
+
+.nav-link a{
+    color:red;
+}
+
+.logo {
+  width:200px;
+}
+
+/* ------------ TYPOGRAFIE ------------ */
+.extra-bold {
+  font-family: 'Muli-Extrabold';
+}
+
+.italic {
+  font-family: 'Muli-Italic';
+}
+
+/* ------------ FOOTER ------------ */
 html {
     height: 100%;
   }
@@ -38,9 +93,7 @@ footer {
     }
 }
 
-/* BACK TO TOP
--------------------------
-*/
+/* ------------ BACK TO TOP ------------ */
 #to-top {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */

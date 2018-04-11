@@ -4,19 +4,25 @@
 - name: Home
   description: Home
   # folder: pages/
-  permalink: /index 
+  permalink: /index
   # fa-icon: icon-info
 
 - name: Logo
   description: Logo
-  folder: pages/logo/
-  permalink: logo/
+  # folder: pages/logo/
+  permalink: /logo
   # fa-icon: icon-graduation-cap
 
-- name: Kleur
-  description: Kleur
-  folder: pages/kleur/
-  permalink: kleur/
+- name: Kleuren
+  description: Kleuren
+  # folder: pages/kleuren
+  permalink: /kleuren
+  # fa-icon: icon-info
+
+- name: Typografie
+  description: Typografie
+  # folder: pages/stijlgids
+  permalink: /typografie
   # fa-icon: icon-info
 
 - name: Styleguide
