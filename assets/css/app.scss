@@ -3,26 +3,3 @@
 @charset "UTF-8";
 
 @import "main";
-
-@font-face {
-    font-family: 'Muli';
-    src: ('../fonts/Muli-Regular.ttf');
-}
-
-/* ---------- global ---------- */
-body {
-    font-family:'Muli';
-}
-
-h1, h2 {
-    font-family:'Muli';
-}
-
-h1 {
-    font-size:48px;
-}
-/* ---------- navbar ---------- */
-.logo {
-    width:250px;
-}
-

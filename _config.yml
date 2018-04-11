@@ -5,7 +5,6 @@
 # Site settings
 # ─────────────
 baseurl: /1718-3CMO-BaP-nomivang
-url: ""
 # host   : 127.0.0.1
 # port   : 4000
 
@@ -19,15 +18,10 @@ tagline: "VVW | Huisstijlgids"
 # ──────────────
 defaults:
   -
-    scope:
-      path: ""
+#    scope:
+#      path: "style-guide"
     values:
       layout: vertical
-  -
-    scope:
-      path: ""
-    values:
-      layout: "default"
 
 exclude:
   - Gemfile
