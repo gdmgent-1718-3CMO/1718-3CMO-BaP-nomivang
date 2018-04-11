@@ -17,11 +17,18 @@
 body {
   font-family: 'Muli', 'Trebuchet MS', sans-serif;
   color: #3C3C3B;
+  background-color:#F8F8F8;
 }
 
 h1, h2 {
   font-family: 'Muli', 'Trebuchet MS', sans-serif;
   color: #3C3C3B;
+}
+
+h1 {
+  font-size:48px;
+  font-family: 'Muli-Extrabold';
+  color: #6859A3;
 }
 
 a {
@@ -40,10 +47,16 @@ blockquote {
   border-left: 2px solid #E73458;
 }
 
+#body {
+  background-color: #F8F8F8;
+  padding-left:50px;
+}
+
 /* ------------ NAVBAR ------------ */
 .navbar a {
     border: none;
     padding:17px;
+   
 }
 
 .nav-link a{
@@ -54,6 +67,37 @@ blockquote {
   width:200px;
 }
 
+#nav-wit {
+  background-color:white;
+}
+
+#toc-wit {
+  background-color:white;
+}
+
+#navlink.navbar {
+  background-color:white;
+}
+
+
+#navlink a {
+  color:#3C3C3B;
+  font-family:'Muli';
+}
+
+#navlink a:hover {
+  color:#66C1BF;
+}
+
+#navlink a:focus {
+  color: #3C3C3B;
+}
+
+#navlink a:active {
+  font-family:'Muli-Extrabold';
+  color:#66C1BF;
+}
+
 /* ------------ TYPOGRAFIE ------------ */
 .extra-bold {
   font-family: 'Muli-Extrabold';
@@ -61,6 +105,46 @@ blockquote {
 
 .italic {
   font-family: 'Muli-Italic';
+}
+
+/* ------------ KLEUREN ------------ */
+.box {
+  width:100px;
+  height:100px;
+  text-align:center;
+  padding-top:35px;
+}
+
+.kleurcode {
+  font-size:13px;
+  color: #3C3C3B;
+  padding-top:10px;
+}
+
+#geel, #roos, #paars, #blauw {
+  color: white;
+
+
+}
+
+.geel {
+  background-color: #FFDF30;
+  margin:15px;
+}
+
+.roos {
+  background-color: #E73458;
+  margin:15px;
+}
+
+.paars {
+  background-color: #6859A3;
+  margin:15px;
+}
+
+.blauw {
+  background-color: #66C1BF;
+  margin:15px;
 }
 
 /* ------------ FOOTER ------------ */
@@ -102,7 +186,7 @@ footer {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color:$mycolor-3; /* Set a background color */
+  background-color:#66C1BF; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   //padding: 15px; /* Some padding */
@@ -111,6 +195,6 @@ footer {
   border-radius: 20px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
   &:hover {
-    background-color:$mycolor-5; 
+    background-color:#498B89; 
   }
 }

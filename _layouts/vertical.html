@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
+    <link rel="shortcut icon" type="image/png" href="{{ "/favicon.png" | prepend: site.baseurl }}" >
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{{ page.title }} | VVW Huisstijlgids</title>
@@ -13,13 +16,13 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12 col-md-3 col-lg-2 pt-0 mt-0 pl-5">
+        <div class="col-12 col-md-3 col-lg-2 pt-0 mt-0 pl-5" id="nav-wit">
             {% include nav_ver_c.html %}
         </div>
-        <div class="col-12 col-md-3 col-lg-2 pl-5 pt-5">
+        <div class="col-12 col-md-3 col-lg-2 pl-5 pt-5" id="toc-wit">
             <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
         </div>
-        <main class="col-12 col-md-5 col-lg-5  pt-5">
+        <main class="col-12 col-md-5 col-lg-5  pt-5" id="body">
             {{ content }}
         </main>
     </div>
