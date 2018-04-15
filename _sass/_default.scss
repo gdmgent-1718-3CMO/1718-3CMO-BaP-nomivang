@@ -1,51 +1,60 @@
 // default-styling
 
 body {
-    font-family: $myfont-family-base;
+    font-family: 'Muli', 'Trebuchet MS', sans-serif;
     font-weight: $font-weight-base;
-    font-size: $font-size-base;
-    line-height: $lineheight-base;
-    background-color: $body-bg;
-    color: $body-color;
+    font-size: 16px;
+    line-height: 25px;
+    color: $color-black;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: $myfont-family-title;
-    font-weight: $font-weight-bold;
+    font-family: 'Muli-Extrabold';
+    color: $color-black;
 }
 
 h1 {
-    font-weight: $font-weight-light;
-    font-size: 4rem;
-    color: $color-grey-2;
+    font-size: 48px;
+    font-weight:800;
 }
 h2 {
-    font-weight: $font-weight-light;
-    font-size: 2rem;
+    color: $mycolor-1;
+    font-weight: 300;
+    text-transform:uppercase;
+    border-bottom:4px solid $mycolor-1;
+    font-size: 25px;
     margin: 2rem 0 1rem;
 }
+
+h3 {
+    padding-bottom:20px;
+}
+
 h3, h4, h5, h6 {
-    font-size: 1rem;
+    font-size: 18px;
     margin: 2rem 0 0;
 }
+
 a {
-    text-decoration: none;
-    color: $body-link;
-    border-bottom: dotted 1px $body-link;
+    text-decoration:none;
+    color: $mycolor-1;
+    border-bottom:1px solid $mycolor-1;
+    padding-bottom:2px;
     &:hover{
-        color: $body-link;
-        text-decoration: none;
-        border-bottom: solid 1px $body-link;
+        text-decoration:none;
+        color: $mycolor-5;
+        border-bottom: 1px solid $mycolor-5;
     }
     &:active{
-        background-color: $body-link;
-        color: $color-white;
+        color: $color-black;
+        border-bottom: 1px solid $color-black;
     }
-    &:focus{}
 }
+
 blockquote {
     padding-left: 24px;
-    border-left: 2px solid $mycolor-5;
+    border-left: 2px solid $mycolor-2;
+    margin-top: 30px;
 }
 
 // ongeordende lijstjes met een ander symbool of kleur
@@ -58,7 +67,7 @@ main ul {
     text-indent: -25px;
     &:before {
         content:'\2022';
-        color: $mycolor-5;
+        color: $mycolor-4;
         margin-right: 18px;
     }    
   }
@@ -78,23 +87,34 @@ main ol {
         counter-increment: i;
         content: counter(i);    
         padding: 3px 6px;
-        margin-right: 5px;
-        border-radius: 5px;
-        background-color: $mycolor-5;
-        color: $color-white;
-        font-family: $myfont-family-title;
-        font-weight: $font-weight-bold;
+        margin-right: 15px;
+        border-radius: 0px;
+        background-color: $mycolor-1;
+        color: white;
+        font-family: 'Muli';
       }    
     }
   }
 
 //forms 
 button, a.btn {
-    
-    &:hover{}
-    &:active{}
-    &:focus{}
+        border-radius:22px;
+        background-color: $mycolor-1;
+        border: 0px;
+        color:white;
+        padding: 10px 20px 10px 20px;
+        cursor: pointer;
+    &:hover{
+        background-color: $mycolor-5;
+    }
+    &:active{
+        background-color: $color-black;
+    }
+    &:focus{
+        outline:0;
+    }
 }
-input[type=text], textarea {
 
+button {
+    margin-bottom:20px;
 }

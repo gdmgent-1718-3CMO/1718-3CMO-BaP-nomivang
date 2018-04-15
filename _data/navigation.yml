@@ -25,8 +25,14 @@
   permalink: /typografie
   # fa-icon: icon-info
 
-- name: Styleguide
-  description: Stijlgids voor de Huistijlgids
+- name: Patroon
+  description: Patroon
   # folder: pages/stijlgids
-  permalink: /stijlgids
+  permalink: patroon
+  # fa-icon: icon-info
+
+- name: Templates
+  description: Templates
+  # folder: pages/stijlgids
+  permalink: templates
   # fa-icon: icon-info

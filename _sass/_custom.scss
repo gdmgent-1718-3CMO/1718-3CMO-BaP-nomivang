@@ -1,56 +1,18 @@
 /* ------------ GLOBAL ------------ */
-@font-face {
-  font-family: Muli;
-  src: url('/assets/fonts/Muli-regular.ttf');
-}
-
-@font-face {
-  font-family: Muli-Extrabold;
-  src: url('/assets/fonts/Muli-Extrabold.ttf');
-}
-
-@font-face {
-  font-family: Muli-Italic;
-  src: url('/assets/fonts/Muli-Italic.ttf');
-}
-
-body {
-  font-family: 'Muli', 'Trebuchet MS', sans-serif;
-  color: #3C3C3B;
-  background-color:#F8F8F8;
-}
-
-h1, h2 {
-  font-family: 'Muli', 'Trebuchet MS', sans-serif;
-  color: #3C3C3B;
-}
-
-h1 {
-  font-size:48px;
-  font-family: 'Muli-Extrabold';
-  color: #6859A3;
-}
-
-a {
-  color:#66C1BF;
-  border-bottom:1px solid #66C1BF;
-  padding-bottom:2px;
-}
-
-a:hover {
-  color: #498B89;
-  border-bottom: 1px solid #498B89;
-}
-
-blockquote {
-  padding-left: 24px;
-  border-left: 2px solid #E73458;
-}
 
 #body {
-  background-color: #F8F8F8;
   padding-left:50px;
 }
+
+.strong {
+  font-weight:800;
+}
+
+.opgelet {
+  color: $mycolor-2;
+  font-weight:800;
+}
+
 
 /* ------------ NAVBAR ------------ */
 .navbar a {
@@ -67,35 +29,13 @@ blockquote {
   width:200px;
 }
 
-#nav-wit {
-  background-color:white;
-}
-
-#toc-wit {
-  background-color:white;
-}
-
-#navlink.navbar {
-  background-color:white;
-}
-
 
 #navlink a {
   color:#3C3C3B;
   font-family:'Muli';
-}
-
-#navlink a:hover {
-  color:#66C1BF;
-}
-
-#navlink a:focus {
-  color: #3C3C3B;
-}
-
-#navlink a:active {
-  font-family:'Muli-Extrabold';
-  color:#66C1BF;
+  &:hover{
+        color: $mycolor-1;
+        }
 }
 
 /* ------------ TYPOGRAFIE ------------ */
@@ -107,10 +47,28 @@ blockquote {
   font-family: 'Muli-Italic';
 }
 
+.typo-1 {
+  text-transform: uppercase;
+  color: $mycolor-2;
+  font-weight:800;
+  border-bottom:3px solid $mycolor-2;
+  padding-bottom:3px;
+
+}
+
+.typo-2 {
+  color: white;
+  text-transform: uppercase;
+  font-weight:800;
+  background-color: $mycolor-1;
+  padding:7px;
+  line-height:40px;
+}
+
 /* ------------ KLEUREN ------------ */
 .box {
-  width:100px;
-  height:100px;
+  width:90px;
+  height:90px;
   text-align:center;
   padding-top:35px;
 }
@@ -121,7 +79,7 @@ blockquote {
   padding-top:10px;
 }
 
-#geel, #roos, #paars, #blauw {
+#geel, #roos, #paars, #blauw, #zwart {
   color: white;
 
 
@@ -147,6 +105,31 @@ blockquote {
   margin:15px;
 }
 
+.zwart {
+  background-color: #3C3C3B;
+  margin:15px;
+}
+/* ------------ LOGO ------------ */
+
+
+/* ------------ TEMPLATES ------------ */
+.bestand {
+  font-size:13px;
+  color: $color-grey-2;
+  margin-left:10px;
+}
+
+.ppt {
+  padding-left:40px;
+  padding-top:10px;
+  padding-bottom:20px;
+}
+
+/* ------------ PATROON ------------ */
+.isobaren {
+  margin-top:10px;
+  margin-bottom:30px;
+}
 /* ------------ FOOTER ------------ */
 html {
     height: 100%;
@@ -167,14 +150,25 @@ body {
 }
 
 footer {
-    background-color: $mycolor-2;
-    color: $color-white;
+      background-color: $color-black;
+      padding-top:30px;
+      padding-bottom:30px;
+
+      font-size:13px;
+      font-weight:300px;
+      color: $color-white;
+  
+
     a {
         color: $color-white;
         &:hover {
             
         }
     }
+}
+
+.gans {
+  padding-bottom:100px;
 }
 
 /* ------------ BACK TO TOP ------------ */
@@ -192,6 +186,7 @@ footer {
   //padding: 15px; /* Some padding */
   width: 40px;
   height: 40px;
+  padding:5px;
   border-radius: 20px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
   &:hover {

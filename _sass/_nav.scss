@@ -30,6 +30,23 @@
  --------------------------- */
  #toc {
     margin-bottom: 1em;
+    padding-top: 50px;
+    margin-left:-20px;
+    
+    a {
+    color: $color-black;
+    padding-left:10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-weight:600;
+    &:hover{
+        color: $mycolor-1;
+        border-left:0px;
+        }
+    &:active{
+        color: $mycolor-5;
+        }
+    }
     .nav {
         display: block;
     }
