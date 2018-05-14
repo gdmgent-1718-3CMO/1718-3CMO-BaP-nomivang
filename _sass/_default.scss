@@ -9,7 +9,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Muli-Extrabold';
+    font-family: 'Muli';
+
     color: $color-black;
 }
 
@@ -19,7 +20,7 @@ h1 {
 }
 h2 {
     color: $mycolor-1;
-    font-weight: 300;
+    font-weight: 700;
     text-transform:uppercase;
     border-bottom:4px solid $mycolor-1;
     font-size: 25px;
@@ -30,9 +31,19 @@ h3 {
     padding-bottom:20px;
 }
 
-h3, h4, h5, h6 {
+h3, h4, h6 {
     font-size: 18px;
     margin: 2rem 0 0;
+    font-weight:800;
+}
+
+h5 {
+    font-size:12px;
+    padding-top:20px;
+    padding-bottom:10px;
+    line-height:20px;
+    text-transform:uppercase;
+    font-weight:800;
 }
 
 a {

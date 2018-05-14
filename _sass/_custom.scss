@@ -110,8 +110,16 @@
   margin:15px;
 }
 /* ------------ LOGO ------------ */
+.img-dont {
+  width:240px;
+  height:112px;
+}
 
-
+.text-dont {
+  color:$mycolor-2;
+  border-bottom:1px solid $mycolor-2;
+  padding-bottom:1px;
+}
 /* ------------ TEMPLATES ------------ */
 .bestand {
   font-size:13px;
